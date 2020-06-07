@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="84" xmlns:dc="http://purl.org/dc/elements/1.1/" styles="unlocked" fileformat="1.0" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="0.99.2" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="abiword.date_last_changed">Sat Jun  6 16:47:15 2020
+</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.creator">brian bauska</m>
+<m key="dc.date">Sat Jun  6 16:47:15 2020
+</m>
+<m key="dc.format">application/x-abiword</m>
+</metadata>
+<rdf>
+</rdf>
+<history version="1" edit-time="35" last-saved="1591487235" uid="f7f7a658-a84f-11ea-9272-f0e01822ac32">
+<version id="1" started="1591487235" uid="0cdf2d20-a850-11ea-9272-f0e01822ac32" auto="0" top-xid="84"/>
+</history>
+<styles>
+<s type="P" name="Normal" followedby="Current Settings" props="font-family:Times New Roman; margin-top:0pt; color:000000; margin-left:0pt; text-position:normal; widows:2; font-style:normal; text-indent:0in; font-variant:normal; font-weight:normal; margin-right:0pt; font-size:12pt; text-decoration:none; margin-bottom:0pt; line-height:1.0; bgcolor:transparent; text-align:left; font-stretch:normal"/>
+</styles>
+<pagesize pagetype="Letter" orientation="portrait" width="8.500000" height="11.000000" units="in" page-scale="1.000000"/>
+<section xid="83" props="page-margin-footer:0.5in; page-margin-header:0.5in">
+<p style="Normal" xid="84" props="text-align:left; dom-dir:ltr"><c>Technical details</c></p>
+<p style="Normal" xid="1" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="2" props="text-align:left; dom-dir:ltr"><c>Every computer on the Internet has an Internet address (sometimes called an IP address). This address is a series of four numbers between 0 and 255, usually written in so-called "dotted quad" notation, like 1.2.3.4 or 255.254.253.252. Some address have special meanings, like 0.0.0.0, which is used as a placeholder where it wouldn't make sense to use a real address. Other IP addresses are reserved for special uses, like those that start with 192.168., which you can use freely on a private network, but which must never be seen on the public Internet.</c></p>
+<p style="Normal" xid="3" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="4" props="text-align:left; dom-dir:ltr"><c>Each computer on the Internet has a little over 65,000 "TCP ports" and a little over 65,000 "UDP ports" that other computers can connect to. So when you downloaded this web page, your computer connected to help.ubuntu.com's secure HTTP port (TCP port number 443) and asked for the page called /community/ServersBehindNAT. See Wikipedia's list of TCP and UDP port numbers for information about uses of particular port numbers. TCP and UDP are network protocols with very different uses, but you don't need to know anything about those differences in order to set a NAT router up.</c></p>
+<p style="Normal" xid="5" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="6" props="text-align:left; dom-dir:ltr"><c>Network Address Translation involves a network of computers, usually a private network where computers have addresses like 192.168.0.1 or 192.168.2.100, and a single gateway computer with a public IP address. The gateway computer rewrites ("translates") references to private addresses in outgoing messages to its public address, and translates its public address back to private addresses in incoming messages.</c></p>
+<p style="Normal" xid="7" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="8" props="text-align:left; dom-dir:ltr"><c>Procedure</c></p>
+<p style="Normal" xid="9" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="10" props="text-align:left; dom-dir:ltr"><c>In order to set a rule telling your router to forward a port, you need to know the following things:</c></p>
+<p style="Normal" xid="11" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="12" props="text-align:left; dom-dir:ltr"><c>    what the IP address of your router is</c></p>
+<p style="Normal" xid="13" props="text-align:left; dom-dir:ltr"><c>    what IP address your computer uses when talking to your router</c></p>
+<p style="Normal" xid="14" props="text-align:left; dom-dir:ltr"><c>    which TCP or UDP port your server listens to on your computer</c></p>
+<p style="Normal" xid="15" props="text-align:left; dom-dir:ltr"><c>    what TCP or UDP port you'd like your router to forward connections from</c></p>
+<p style="Normal" xid="16" props="text-align:left; dom-dir:ltr"><c>    How to configure your router </c></p>
+<p style="Normal" xid="17" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="18" props="text-align:left; dom-dir:ltr"><c>Once you've set up your server to work over a local network, it's easy to find your IP address and what port(s) your server listens on. In GNOME, you can find both from the Network Tools application, available in System &gt; Administration &gt; Network Tools. Otherwise, you'll have to use the command line.</c></p>
+<p style="Normal" xid="19" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="20" props="text-align:left; dom-dir:ltr"><c>Network Tools</c></p>
+<p style="Normal" xid="21" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="22" props="text-align:left; dom-dir:ltr"><c>GNOME's Network Tools application is a collection of utilities to help with common network management jobs.</c></p>
+<p style="Normal" xid="23" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="24" props="text-align:left; dom-dir:ltr"><c>The first step is to find the IP address of your router. Go to the Netstat tab, press the Routing Table Information button and click Netstat. This will give you a list of all the rules your computer uses to decide where to send messages. Look down the list for a row with 0.0.0.0 in the leftmost column ("Destination"). This row tells your computer where to send messages destined for the public Internet, and the second column in that row ("Gateway") is the IP address of your router, which is probably something like 192.168.0.1 or 192.168.1.254. The rightmost column in the row ("Interface") tells you which device your computer uses to connect to your router, which is probably eth0 or eth1, and which you will need to know for the second step.</c></p>
+<p style="Normal" xid="25" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="26" props="text-align:left; dom-dir:ltr"><c>The second step is to find the IP address your computer uses to talk to the router. Go to the Devices tab, click the Network device drop down list, and click on the device with the name you saw at the end of step one. This will give you a list of addresses for that interface. Look down the list for a row with "IPv4" in the leftmost column ("Protocol"). This row tells you the address your computer normally uses, as opposed to its IPv6 address, which is for a next-generation protocol that isn't widely used yet. The second column in the row ("IP Address") is the IP address your computer uses to talk to the router.</c></p>
+<p style="Normal" xid="27" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="28" props="text-align:left; dom-dir:ltr"><c>The third step is to find the TCP or UDP port your server listens on. This sometimes takes a bit of guesswork. Go to the Port Scan tab, click on the Network address text box, type in the address your computer uses to talk to the router, and click Scan. After a few seconds, this will give you a list of services on your computer, and the ports they are listening on. Look down the list for a row with the name of the service you want in the rightmost column ("Service"). This row tells you the port number for the service you to make available. The leftmost column in the row ("Port") is the port number you want.</c></p>
+<p style="Normal" xid="29" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="30" props="text-align:left; dom-dir:ltr"><c>Now you have your router's IP address, your IP address, and your port, you are ready to configure your router.</c></p>
+<p style="Normal" xid="31" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="32" props="text-align:left; dom-dir:ltr"><c>Command line</c></p>
+<p style="Normal" xid="33" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="34" props="text-align:left; dom-dir:ltr"><c>If you do not have access to GNOME's Network Tools, you can find the information you need on the command line. If you are not sure what a command line is, the CommandlineHowto is a gentle introduction. Once you have gotten to a command line, use this to figure out the router address:</c></p>
+<p style="Normal" xid="35" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="36" props="text-align:left; dom-dir:ltr"><c>ip route show | grep ^default</c></p>
+<p style="Normal" xid="37" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="38" props="text-align:left; dom-dir:ltr"><c>Afterwards, fill in the router address for xyz and issue:</c></p>
+<p style="Normal" xid="39" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="40" props="text-align:left; dom-dir:ltr"><c>ip route get ''xyz''</c></p>
+<p style="Normal" xid="41" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="42" props="text-align:left; dom-dir:ltr"><c>Behind the "src" keyword you will find the address that is used to contact the router.</c></p>
+<p style="Normal" xid="43" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="44" props="text-align:left; dom-dir:ltr"><c>Next, type the following in, press enter, and type your password if necessary:</c></p>
+<p style="Normal" xid="45" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="46" props="text-align:left; dom-dir:ltr"><c>ss -altnp | perl -ne '@_=split;printf"%-20s %s\n",@_[2,4]'</c></p>
+<p style="Normal" xid="47" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="48" props="text-align:left; dom-dir:ltr"><c>which yields a list like</c></p>
+<p style="Normal" xid="49" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="50" props="text-align:left; dom-dir:ltr"><c>Local                Peer (Process name)</c></p>
+<p style="Normal" xid="51" props="text-align:left; dom-dir:ltr"><c>:::22                users:(("sshd",...))</c></p>
+<p style="Normal" xid="52" props="text-align:left; dom-dir:ltr"><c>:::389               users:(("slapd",...))</c></p>
+<p style="Normal" xid="53" props="text-align:left; dom-dir:ltr"><c>:::873               users:(("rsyncd",...))</c></p>
+<p style="Normal" xid="54" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="55" props="text-align:left; dom-dir:ltr"><c>Alternatively, if you have nmap installed, you can also use:</c></p>
+<p style="Normal" xid="56" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="57" props="text-align:left; dom-dir:ltr"><c>sudo nmap localhost -p 1-65535</c></p>
+<p style="Normal" xid="58" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="59" props="text-align:left; dom-dir:ltr"><c>This will print a list that looks something like:</c></p>
+<p style="Normal" xid="60" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="61" props="text-align:left; dom-dir:ltr"><c>PORT      STATE SERVICE (PORT NAME)</c></p>
+<p style="Normal" xid="62" props="text-align:left; dom-dir:ltr"><c>25/tcp    open  smtp</c></p>
+<p style="Normal" xid="63" props="text-align:left; dom-dir:ltr"><c>80/tcp    open  http</c></p>
+<p style="Normal" xid="64" props="text-align:left; dom-dir:ltr"><c>143/tcp   open  imap</c></p>
+<p style="Normal" xid="65" props="text-align:left; dom-dir:ltr"><c>631/tcp   open  ipp</c></p>
+<p style="Normal" xid="66" props="text-align:left; dom-dir:ltr"><c>3306/tcp  open  mysql</c></p>
+<p style="Normal" xid="67" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="68" props="text-align:left; dom-dir:ltr"><c>This gives a list of services available on your computer - pick the port number for the one that you want. When you've picked the port you want, you are ready to configure your router.</c></p>
+<p style="Normal" xid="69" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="70" props="text-align:left; dom-dir:ltr"><c>Configuring your router</c></p>
+<p style="Normal" xid="71" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="72" props="text-align:left; dom-dir:ltr"><c>Modern routers are fairly easy to configure, but all have slightly different interfaces. You will need to consult your router's manual for exact guidance.</c></p>
+<p style="Normal" xid="73" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="74" props="text-align:left; dom-dir:ltr"><c>Most modern routers can be configured through a web browser. To go to your router's home page, open a new tab in your browser and type in your router's IP address. If a page about your router doesn't appear, you will need to find another way of configuring your router. Although most routers have an information page that anyone can view, you will need to log in to change settings - again, consult your manual to find the details you need to provide. Once you have logged in, you will need to find a page for configuring which ports to forward. Some routers have this information in a Virtual Servers page - if your router has a different name for it, please add that name to this document so that other people will know what to do.</c></p>
+<p style="Normal" xid="75" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="76" props="text-align:left; dom-dir:ltr"><c>When you have found the right page, you need to type in the IP address of your computer and the port your server listens on. You also need to type in the port that the router should listen on. It's best for the router to listen on the same port as your server, but you should choose a port with a similar-looking number if the port you want is in use. For example, web servers normally listen on port 80, but common alternative ports for web servers include 8000 and 8080.</c></p>
+<p style="Normal" xid="77" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="78" props="text-align:left; dom-dir:ltr"><c>When you have typed your information in, save your changes and log out.</c></p>
+<p style="Normal" xid="79" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="80" props="text-align:left; dom-dir:ltr"><c>Finish</c></p>
+<p style="Normal" xid="81" props="text-align:left; dom-dir:ltr"><c></c></p>
+<p style="Normal" xid="82" props="text-align:left; dom-dir:ltr"><c>You should now be able to connect to your computer through your router's public IP address. If you don't know what that address is, you can normally find it from the router's home page. If you had to use an alternate port in the last setting, you will need to tell programs to use that port. For example, if your router's public IP address is 1.2.3.4 and you put your web server on port 8080, web browsers would have to go to http://1.2.3.4:8080/ in order to get to you. </c></p>
+</section>
+</abiword>
